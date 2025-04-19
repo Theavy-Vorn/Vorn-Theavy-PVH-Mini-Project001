@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex demo</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: end;
+    /* flex-flow:row-reverse; */
+   
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    
+   
+   
+   
+    
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="item" style="order: 4;" >1</div>
+        <div class="item" style="order:5" >2</div>
+        <div class="item" style="order: 2;">3</div>
+        <div class="item" >4</div>
+        <div class="item" style="align-self: 300px;">5</div>
+    </div>
+    
+</body>
+</html>
